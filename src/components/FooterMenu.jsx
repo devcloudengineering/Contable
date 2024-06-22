@@ -83,7 +83,7 @@ const FooterMenu = () => {
                 alt="Redes sociales"
               />
               <img
-                className="object-cover object-center h-10"
+                className="object-cover object-center h-10 cursor-pointer"
                 src={youtube}
                 alt="Redes sociales"
               />
