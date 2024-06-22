@@ -11,7 +11,6 @@ const CardPublicaciones = ({ titulo, fecha, body, src, descripcion }) => {
       <h3 className="italic">{titulo}</h3>
       <h4 className="mb-2 text-xs">{fecha}</h4>
       <p className="text-center mb-2">{body}</p>
-      <Boton text="Revisar"></Boton>
     </div>
   );
 };
