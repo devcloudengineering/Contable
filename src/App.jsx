@@ -20,6 +20,7 @@ export function App() {
         <Route path="/noticias" element={<Noticias />}></Route>
         <Route path="/contacto" element={<Contacto />}></Route>
       </Routes>
+      <hr className="border-none h-[2px] rounded-r-full bg-lime-500/40 mx-16 mb-8" />
       <FooterMenu></FooterMenu>
     </Router>
   );

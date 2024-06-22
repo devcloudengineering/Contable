@@ -4,13 +4,14 @@ import teletrabajo from "../assets/images/secciones/teletrabajo.png";
 import conexion from "../assets/images/secciones/conexion.png";
 import CardPublicaciones from "../components/CardPublicaciones/CardPublicaciones";
 import publicacion01 from "../assets/images/publicaciones/publicacion01.png";
+import CarruselTestimonios from "../components/CardTestimonios/CarruselTestimonios";
 export function Inicio() {
   return (
     <>
       <h1 className="text-4xl text-center mb-12 italic">
         Servicios Integrados
       </h1>
-      <CardServicios></CardServicios>
+      <CardServicios />
       <LayoutCardSeccion
         htext="Hemos diseñado un servicio contable moderno y de calidad que te
           sorprenderá"
@@ -31,7 +32,7 @@ export function Inicio() {
       <h2 className="text-4xl text-start mb-12 italic mx-16">
         Ultimas publicaciones
       </h2>
-      <div className="container m-auto flex flex-column flex-row flex-wrap justify-center gap-10">
+      <div className="container m-auto flex flex-column flex-row flex-wrap justify-center gap-10 mb-4">
         <CardPublicaciones
           titulo="Operación Renta 2024"
           fecha="13/06/2024"
@@ -68,7 +69,12 @@ export function Inicio() {
           descripcion="Operacion renta"
         />
       </div>
-      <h2>Testimonios Recientes</h2>
+      <h2 className="text-4xl text-start italic mx-16 mt-12">
+        Testimonios de nuestros clientes
+      </h2>
+      <div className="container mx-auto ">
+        <CarruselTestimonios />
+      </div>
     </>
   );
 }

@@ -10,7 +10,6 @@ const NavMenu = () => {
           <img className="h-10" src={logo} alt="Asesoria contable" />
           <p>Asesoria</p>
         </li>
-        +
         <div className="flex flex-grow justify-center mr-44">
           <li>
             <NavLink
