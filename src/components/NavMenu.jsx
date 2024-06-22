@@ -8,7 +8,7 @@ const NavMenu = () => {
       <ul className="flex items-center justify-between gap-4">
         <li className="flex items-center text-2xl italic font-medium text-lime-100">
           <img className="h-10" src={logo} alt="Asesoria contable" />
-          <p>Asesoria</p>
+          <p>Asesoria Pymes</p>
         </li>
         <div className="flex flex-grow justify-center mr-44">
           <li>
