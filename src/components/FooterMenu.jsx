@@ -9,6 +9,7 @@ import youtube from "../assets/icons/footer/youtube.png";
 import ubicacion from "../assets/icons/footer/ubicacion.png";
 import mensaje from "../assets/icons/footer/mensaje.png";
 import llamada from "../assets/icons/footer/llamada.png";
+import btnwhatsapp from "../assets/icons/footer/btn_whatsapp.png";
 import { NavLink } from "react-router-dom";
 
 const FooterMenu = () => {
@@ -93,8 +94,10 @@ const FooterMenu = () => {
       </div>
       <div className="flex justify-between mx-10 mb-4 mt-4">
         <Boton
-          text="📞WhattsApp Aqui"
-          classOptional="text-white italic rounded-xl bg-green-500 hover:bg-green-600"
+          text="WhattsApp Aqui"
+          src={btnwhatsapp}
+          descripcion="Boton de whattsap corporativo"
+          classOptional="text-white rounded-xl bg-green-500 hover:bg-green-600 flex items-center gap-1 font-bold font-serif p-2 cursor-pointer border tracking-wider transition-all"
         />
         <img
           className="h-14 object-cover object-center cursor-pointer scale-90 hover:scale-110 transition-all"
