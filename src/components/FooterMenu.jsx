@@ -22,18 +22,54 @@ const FooterMenu = () => {
         </div>
         <div className="col-start-2">
           <ul className="flex flex-col justtify-center items-center italic gap-4 font-semibold">
-            <li className="hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `${
+                  isActive
+                    ? "text-lime-700 px-3 py-2 font-bold line-clamp-5 uppercase text-2xl underline decoration-5 underline-offset-8 transition-all"
+                    : "hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8 "
+                }`
+              }
+            >
               Inicio
-            </li>
-            <li className="hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8 ">
+            </NavLink>
+            <NavLink
+              to="/servicios"
+              className={({ isActive }) =>
+                `${
+                  isActive
+                    ? "text-lime-700 px-3 py-2 font-bold line-clamp-5 uppercase text-2xl underline decoration-5 underline-offset-8 transition-all"
+                    : "hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8 "
+                }`
+              }
+            >
               Servicios
-            </li>
-            <li className="hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8 ">
+            </NavLink>
+            <NavLink
+              to="/contacto"
+              className={({ isActive }) =>
+                `${
+                  isActive
+                    ? "text-lime-700 px-3 py-2 font-bold line-clamp-5 uppercase text-2xl underline decoration-5 underline-offset-8 transition-all"
+                    : "hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8"
+                }`
+              }
+            >
               Contacto
-            </li>
-            <li className="hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8 ">
+            </NavLink>
+            <NavLink
+              to="/noticias"
+              className={({ isActive }) =>
+                `${
+                  isActive
+                    ? "text-lime-700 px-3 py-2 font-bold line-clamp-5 uppercase text-2xl underline decoration-5 underline-offset-8 transition-all"
+                    : "hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8"
+                }`
+              }
+            >
               Noticias
-            </li>
+            </NavLink>
           </ul>
         </div>
         <div className="col-start-3 flex justify-center items-center">
