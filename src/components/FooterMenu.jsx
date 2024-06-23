@@ -93,8 +93,8 @@ const FooterMenu = () => {
       </div>
       <div className="flex justify-between mx-10 mb-4 mt-4">
         <Boton
-          text="📞 WhattsApp Aqui"
-          classOptional="text-white italic rounded-xl"
+          text="📞WhattsApp Aqui"
+          classOptional="text-white italic rounded-xl bg-green-500 hover:bg-green-600"
         />
         <img
           className="h-14 object-cover object-center cursor-pointer scale-90 hover:scale-110 transition-all"
