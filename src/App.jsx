@@ -11,8 +11,8 @@ export function App() {
   return (
     <Router>
       <div className="bg-[url('./assets/images/home/home.png')] h-screen bg-cover bg-bottom bg-no-repeat drop-shadow-2xl">
-        <NavMenu></NavMenu>
-        <ModalHome></ModalHome>
+        <NavMenu />
+        <ModalHome />
       </div>
       <Routes>
         <Route path="/" element={<Inicio />}></Route>
@@ -21,7 +21,7 @@ export function App() {
         <Route path="/contacto" element={<Contacto />}></Route>
       </Routes>
       <hr className="border-none h-[2px] rounded-r-full bg-lime-500/40 mx-16 mb-8" />
-      <FooterMenu></FooterMenu>
+      <FooterMenu />
     </Router>
   );
 }

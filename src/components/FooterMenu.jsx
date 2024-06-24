@@ -13,6 +13,13 @@ import btnwhatsapp from "../assets/icons/footer/btn_whatsapp.png";
 import { NavLink } from "react-router-dom";
 
 const FooterMenu = () => {
+  const handleClickScroll = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="h-[15rem] flex flex-col justify-between mb-10">
       <div className="grid grid-rows-1 grid-cols-3 justify-center items-center h-[15rem]">
@@ -31,6 +38,7 @@ const FooterMenu = () => {
                     : "hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8 "
                 }`
               }
+              onClick={handleClickScroll}
             >
               Inicio
             </NavLink>
@@ -43,20 +51,9 @@ const FooterMenu = () => {
                     : "hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8 "
                 }`
               }
+              onClick={handleClickScroll}
             >
               Servicios
-            </NavLink>
-            <NavLink
-              to="/contacto"
-              className={({ isActive }) =>
-                `${
-                  isActive
-                    ? "text-lime-700 px-3 py-2 font-bold line-clamp-5 uppercase text-2xl underline decoration-5 underline-offset-8 transition-all"
-                    : "hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8"
-                }`
-              }
-            >
-              Contacto
             </NavLink>
             <NavLink
               to="/noticias"
@@ -67,8 +64,22 @@ const FooterMenu = () => {
                     : "hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8"
                 }`
               }
+              onClick={handleClickScroll}
             >
               Noticias
+            </NavLink>
+            <NavLink
+              to="/contacto"
+              className={({ isActive }) =>
+                `${
+                  isActive
+                    ? "text-lime-700 px-3 py-2 font-bold line-clamp-5 uppercase text-2xl underline decoration-5 underline-offset-8 transition-all"
+                    : "hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8"
+                }`
+              }
+              onClick={handleClickScroll}
+            >
+              Contacto
             </NavLink>
           </ul>
         </div>
