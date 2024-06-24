@@ -1,9 +1,9 @@
-import impuestos from "../../assets/icons/servicioshome/impuestos_sii.png";
-import legales from "../../assets/icons/servicioshome/legales.png";
-import contabilidad from "../../assets/icons/servicioshome/contabilidad.png";
-import patente from "../../assets/icons/servicioshome/patente.png";
-import recursos from "../../assets/icons/servicioshome/recursos_humanos.png";
-import constitucion from "../../assets/icons/servicioshome/constitucion_empresa.png";
+import impuestos from "../../../assets/icons/servicioshome/impuestos_sii.png";
+import legales from "../../../assets/icons/servicioshome/legales.png";
+import contabilidad from "../../../assets/icons/servicioshome/contabilidad.png";
+import patente from "../../../assets/icons/servicioshome/patente.png";
+import recursos from "../../../assets/icons/servicioshome/recursos_humanos.png";
+import constitucion from "../../../assets/icons/servicioshome/constitucion_empresa.png";
 
 const CardServicios = () => {
   const servicios = [

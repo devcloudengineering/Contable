@@ -1,10 +1,10 @@
-import LayoutCardSeccion from "../components/LayoutCardSeccion/LayoutCardSeccion";
-import CardServicios from "../components/CardServicios/CardServicios";
+import LayoutCardSeccion from "../components/Inicio/LayoutCardSeccion";
+import CardServicios from "../components/Inicio/CardServicios/CardServicios.jsx";
 import teletrabajo from "../assets/images/secciones/teletrabajo.png";
 import conexion from "../assets/images/secciones/conexion.png";
-import CardPublicaciones from "../components/CardPublicaciones/CardPublicaciones";
+import CardPublicaciones from "../components/Inicio/CardPublicaciones/CardPublicaciones.jsx";
 import publicacion01 from "../assets/images/publicaciones/publicacion01.png";
-import CarruselTestimonios from "../components/CardTestimonios/CarruselTestimonios";
+import CarruselTestimonios from "../components/Inicio/CardTestimonios/CarruselTestimonios.jsx";
 export function Inicio() {
   return (
     <>

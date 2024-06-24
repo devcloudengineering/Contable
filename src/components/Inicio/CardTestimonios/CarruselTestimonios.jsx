@@ -1,7 +1,7 @@
 import CardTestimonios from "./CardTestimonios.jsx";
-import agradecimiento1 from "../../assets/images/agradecimientos/agradecimiento1.png";
-import agradecimiento2 from "../../assets/images/agradecimientos/agradecimiento2.png";
-import agradecimiento3 from "../../assets/images/agradecimientos/agradecimiento3.png";
+import agradecimiento1 from "../../../assets/images/agradecimientos/agradecimiento1.png";
+import agradecimiento2 from "../../../assets/images/agradecimientos/agradecimiento2.png";
+import agradecimiento3 from "../../../assets/images/agradecimientos/agradecimiento3.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
