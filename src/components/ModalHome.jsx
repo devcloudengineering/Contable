@@ -1,6 +1,6 @@
 import { Boton } from "./Boton/Boton.jsx";
 
-const ModalHome = () => {
+export const ModalHome = () => {
   return (
     <div className="flex flex-col gap-4 relative p-6 m-2 w-96 h-[28rem] backdrop-blur-sm rounded-md text-white items-center">
       <h1 className=" text-center text-4xl">
@@ -17,5 +17,3 @@ const ModalHome = () => {
     </div>
   );
 };
-
-export default ModalHome;

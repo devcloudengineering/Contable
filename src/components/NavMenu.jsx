@@ -2,7 +2,7 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/icons/logocorporativo/logo.png";
 
-const NavMenu = () => {
+export const NavMenu = () => {
   return (
     <nav className="p-6">
       <ul className="flex items-center justify-between gap-4">
@@ -72,5 +72,3 @@ const NavMenu = () => {
     </nav>
   );
 };
-
-export default NavMenu;

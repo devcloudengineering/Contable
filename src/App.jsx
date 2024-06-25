@@ -1,11 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import FooterMenu from "./components/FooterMenu.jsx";
-import NavMenu from "./components/NavMenu.jsx";
-import { Contacto } from "./pages/Contacto.jsx";
-import { Noticias } from "./pages/Noticias.jsx";
-import { Servicios } from "./pages/Servicios.jsx";
-import { Inicio } from "./pages/Inicio.jsx";
-import ModalHome from "./components/ModalHome.jsx";
+import { FooterMenu, NavMenu, ModalHome } from "./components";
+import { Contacto, Noticias, Servicios, Inicio } from "./pages";
 
 export function App() {
   return (

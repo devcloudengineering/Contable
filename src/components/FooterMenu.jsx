@@ -12,7 +12,7 @@ import llamada from "../assets/icons/footer/llamada.png";
 import btnwhatsapp from "../assets/icons/footer/btn_whatsapp.png";
 import { NavLink } from "react-router-dom";
 
-const FooterMenu = () => {
+export const FooterMenu = () => {
   const handleClickScroll = () => {
     window.scrollTo({
       top: 0,
@@ -155,5 +155,3 @@ const FooterMenu = () => {
     </div>
   );
 };
-
-export default FooterMenu;
