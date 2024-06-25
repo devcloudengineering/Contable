@@ -1,3 +1,9 @@
+import ServiciosCentralizado from "../components/ServiciosCentralizado/ServiciosCentralizado.jsx";
 export function Servicios() {
-  return <h1>Servicios</h1>;
+  return (
+    <div>
+      <h1>Servicios</h1>
+      <ServiciosCentralizado />
+    </div>
+  );
 }
