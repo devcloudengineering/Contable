@@ -2,7 +2,7 @@ import menu from "../../assets/icons/servicioscentralizado/menu.png";
 
 const ListaServicios = () => {
   return (
-    <div className="col-start-1 flex flex-col justify-center items-start gap-2">
+    <div className="col-start-1 flex flex-col items-start justify-start gap-2 px-10">
       <div className="flex justify-between">
         <img
           className="h-10"
