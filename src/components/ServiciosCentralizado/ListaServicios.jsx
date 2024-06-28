@@ -29,7 +29,7 @@ const ListaServicios = (props) => {
           props.valorStyle === 0
             ? "bg-lime-500 text-black text-xs font-bold font-serif px-2 py-2 rounded-md cursor-pointer hover:bg-lime-600 w-fit border tracking-wider transition-all"
             : "bg-lime-300 text-black text-xs font-bold font-serif px-2 py-2 rounded-md cursor-pointer hover:bg-lime-600 w-fit border tracking-wider transition-all"
-        } flex cursor-pointer w-full h-[3rem] items-center`}
+        } flex cursor-pointer w-full h-[3rem] items-center gap-2`}
         onClick={() => {
           handlefocusStyle(0);
         }}
