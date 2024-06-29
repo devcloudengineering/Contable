@@ -1,5 +1,11 @@
+import NoticiasDespliegue from "./NoticiasDespliegue";
+
 const NoticiasCentralizado = () => {
-  return <div></div>;
+  return (
+    <div>
+      <NoticiasDespliegue />
+    </div>
+  );
 };
 
 export default NoticiasCentralizado;
