@@ -4,7 +4,7 @@ import whatsapp_cotacto from "../../assets/icons/footer/whatsapp_cotacto.png";
 
 const AsideDespliegue = () => {
   return (
-    <div className="col-start-1 w-[30rem]">
+    <div className="col-start-1 w-[30rem] text-center">
       <p className="text-3xl text-start italic my-12 inline-block">
         ¿Necesitas ayuda
       </p>
@@ -17,7 +17,7 @@ const AsideDespliegue = () => {
       </p>
       <p className="mt-12">O por nuestros canales de comunicacion oficiales</p>
       <div>
-        <div className="flex gap-8 object-cover object-center h-16  mt-8">
+        <div className="flex gap-8 object-cover object-center h-16  mt-8 justify-center">
           <img
             src={mensaje}
             alt="Correo corporativo"
@@ -34,7 +34,7 @@ const AsideDespliegue = () => {
             className="cursor-pointer transition-all hover:scale-125 "
           />
         </div>
-        <div className="flex gap-4 object-cover object-center h-5  mt-8">
+        <div className="flex gap-4 object-cover object-center h-5  mt-8 justify-center">
           <img src={llamada} alt="Telefono de contacto" />
           <p className="italic text-lime-700 font-semibold cursor-pointer transition-all hover:text-lime-500 hover:scale-110">
             +569 9999 9999 Chile - Santiago
