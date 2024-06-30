@@ -32,7 +32,7 @@ export function Inicio() {
       <h2 className="text-4xl text-start mb-12 italic mx-16">
         Ultimas publicaciones
       </h2>
-      <div className="container m-auto flex flex-column flex-row flex-wrap justify-center gap-10 mb-4">
+      <div className="container m-auto flex flex-row flex-wrap justify-center gap-10 mb-4">
         <CardPublicaciones
           titulo="Operación Renta 2024"
           fecha="13/06/2024"

@@ -1,8 +1,8 @@
-import NoticiasDespliegue from "./NoticiasDespliegue";
+import NoticiasDespliegue from "./NoticiasDespliegue.jsx";
 
 const NoticiasCentralizado = () => {
   return (
-    <div>
+    <div className="mb-12">
       <NoticiasDespliegue />
     </div>
   );
