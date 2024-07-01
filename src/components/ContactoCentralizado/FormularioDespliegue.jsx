@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Boton } from "../Boton";
 
@@ -6,15 +7,42 @@ const FormularioDespliegue = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
+  const [submitStatus, setSubmitStatus] = useState(null);
 
-  const onSubmit = handleSubmit((data) => {
-    console.log(data);
-  });
+  const onSubmit = async (data) => {
+    try {
+      const response = await fetch("http://localhost:3000/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Error al enviar el formulario");
+      }
+
+      const result = await response.json();
+      if (result.success) {
+        setSubmitStatus("El formulario se envió correctamente.");
+        reset();
+      } else {
+        throw new Error(result.error || "Error desconocido");
+      }
+    } catch (error) {
+      setSubmitStatus(`Hubo un error al enviar el formulario`);
+    }
+  };
 
   return (
     <div className="col-start-2 mb-12 bg-lime-200 rounded-lg drop-shadow-xl">
-      <form onSubmit={onSubmit} className="p-8 flex flex-col gap-2">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="p-8 flex flex-col gap-2"
+      >
         <label htmlFor="nombre" className="block italic">
           Nombre
         </label>
@@ -29,7 +57,7 @@ const FormularioDespliegue = () => {
             },
             maxLength: {
               value: 20,
-              message: "El nombre excede la cantidad maxima de caracteres",
+              message: "El nombre excede la cantidad máxima de caracteres",
             },
             minLength: {
               value: 3,
@@ -68,7 +96,7 @@ const FormularioDespliegue = () => {
             },
             pattern: {
               value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-              message: "Correo no valido",
+              message: "Correo no válido",
             },
           })}
         />
@@ -80,16 +108,16 @@ const FormularioDespliegue = () => {
         )}
 
         <label htmlFor="telefono" className="block italic">
-          Telefono
+          Teléfono
         </label>
         <input
           type="tel"
           className="border border-lime-400 rounded-lg p-2"
-          placeholder="Escribe tu telefono ..."
+          placeholder="Escribe tu teléfono ..."
           {...register("telefono", {
             required: {
               value: true,
-              message: "Telefono de contacto requerido",
+              message: "Teléfono de contacto requerido",
             },
           })}
         />
@@ -109,7 +137,7 @@ const FormularioDespliegue = () => {
           id="mensaje"
           cols={50}
           rows={5}
-          placeholder="Cuentanos en que te podemos ayudar ..."
+          placeholder="Cuéntanos en qué te podemos ayudar ..."
           {...register("mensaje", {
             required: {
               value: true,
@@ -129,6 +157,7 @@ const FormularioDespliegue = () => {
           text="Enviar"
         />
       </form>
+      {submitStatus && <p className="text-center mt-2 mb-4">{submitStatus}</p>}
     </div>
   );
 };
