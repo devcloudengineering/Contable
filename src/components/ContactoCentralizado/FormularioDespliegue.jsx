@@ -27,13 +27,15 @@ const FormularioDespliegue = () => {
 
       const result = await response.json();
       if (result.success) {
-        setSubmitStatus("El formulario se envió correctamente.");
+        setSubmitStatus("El formulario se envió correctamente");
         reset();
       } else {
         throw new Error(result.error || "Error desconocido");
       }
     } catch (error) {
-      setSubmitStatus(`Hubo un error al enviar el formulario`);
+      setSubmitStatus(
+        `En estos momentos tenemos problemas con la solicitud, porfavor contactarnos con nuestros otros canales de comunicacion ... Gracias por la comprension`
+      );
     }
   };
 
@@ -43,7 +45,10 @@ const FormularioDespliegue = () => {
         onSubmit={handleSubmit(onSubmit)}
         className="p-8 flex flex-col gap-2"
       >
-        <label htmlFor="nombre" className="block italic">
+        <label
+          htmlFor="nombre"
+          className="block italic text-lime-700/65 text-xl font-semibold"
+        >
           Nombre
         </label>
         <input
@@ -72,7 +77,10 @@ const FormularioDespliegue = () => {
           </span>
         )}
 
-        <label htmlFor="apellido" className="block italic">
+        <label
+          htmlFor="apellido"
+          className="block italic text-lime-700/65 text-xl font-semibold"
+        >
           Apellido
         </label>
         <input
@@ -82,7 +90,10 @@ const FormularioDespliegue = () => {
           {...register("apellido")}
         />
 
-        <label htmlFor="email" className="block italic">
+        <label
+          htmlFor="email"
+          className="block italic text-lime-700/65 text-xl font-semibold"
+        >
           Email
         </label>
         <input
@@ -107,7 +118,10 @@ const FormularioDespliegue = () => {
           </span>
         )}
 
-        <label htmlFor="telefono" className="block italic">
+        <label
+          htmlFor="telefono"
+          className="block italic text-lime-700/65 text-xl font-semibold"
+        >
           Teléfono
         </label>
         <input
@@ -128,7 +142,10 @@ const FormularioDespliegue = () => {
           </span>
         )}
 
-        <label htmlFor="mensaje" className="block italic">
+        <label
+          htmlFor="mensaje"
+          className="block italic text-lime-700/65 text-xl font-semibold"
+        >
           Mensaje
         </label>
         <textarea
@@ -157,7 +174,11 @@ const FormularioDespliegue = () => {
           text="Enviar"
         />
       </form>
-      {submitStatus && <p className="text-center mt-2 mb-4">{submitStatus}</p>}
+      {submitStatus && (
+        <p className="text-center mt-2 mb-8 text-xl font-mono font-semibold text-lime-700/80">
+          {submitStatus}
+        </p>
+      )}
     </div>
   );
 };

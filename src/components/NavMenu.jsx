@@ -10,15 +10,15 @@ export const NavMenu = () => {
           <img className="h-10" src={logo} alt="Asesoria contable" />
           <p>Asesoria Pymes</p>
         </li>
-        <div className="flex flex-grow justify-center mr-44">
+        <div className="flex flex-grow justify-center">
           <li>
             <NavLink
               to="/"
               className={({ isActive }) =>
                 `${
                   isActive
-                    ? "text-lime-700 px-3 py-2 font-bold line-clamp-5 uppercase text-2xl underline decoration-5 underline-offset-8 transition-all"
-                    : "text-black px-3 py-2 font-bold"
+                    ? "text-lime-700 px-4 py-2 font-bold line-clamp-5 uppercase text-2xl underline decoration-5 underline-offset-8 transition-all"
+                    : "text-black px-3 py-2 font-bold text hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8 italic uppercase"
                 }`
               }
             >
@@ -32,7 +32,7 @@ export const NavMenu = () => {
                 `${
                   isActive
                     ? "text-lime-700 px-3 py-2 font-bold line-clamp-5 uppercase text-2xl underline decoration-5 underline-offset-8 transition-all"
-                    : "text-black px-3 py-2 font-bold"
+                    : "text-black px-3 py-2 font-bold hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8 uppercase italic"
                 }`
               }
             >
@@ -46,7 +46,7 @@ export const NavMenu = () => {
                 `${
                   isActive
                     ? "text-lime-700 px-3 py-2 font-bold line-clamp-5 uppercase text-2xl underline decoration-5 underline-offset-8 transition-all"
-                    : "text-black px-3 py-2 font-bold"
+                    : "text-black px-3 py-2 font-bold hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8 uppercase italic"
                 }`
               }
             >
@@ -60,7 +60,7 @@ export const NavMenu = () => {
                 `${
                   isActive
                     ? "text-lime-700 px-3 py-2 font-bold line-clamp-5 uppercase text-2xl underline decoration-5 underline-offset-8 transition-all"
-                    : "text-black px-3 py-2 font-bold"
+                    : "text-black px-3 py-2 font-bold hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8 uppercase italic "
                 }`
               }
             >

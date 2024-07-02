@@ -34,8 +34,8 @@ export const FooterMenu = () => {
               className={({ isActive }) =>
                 `${
                   isActive
-                    ? "text-lime-700 px-3 py-2 font-bold line-clamp-5 uppercase text-2xl underline decoration-5 underline-offset-8 transition-all"
-                    : "hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8 "
+                    ? "text-lime-700 px-3 py-2 font-bold line-clamp-5 uppercase text-2xl underline decoration-5 underline-offset-8 transition-all "
+                    : "hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8"
                 }`
               }
               onClick={handleClickScroll}
