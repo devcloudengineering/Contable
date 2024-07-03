@@ -15,7 +15,7 @@ import { NavLink } from "react-router-dom";
 export const FooterMenu = () => {
   const handleClickScroll = () => {
     window.scrollTo({
-      top: 0,
+      top: 600,
       behavior: "smooth",
     });
   };

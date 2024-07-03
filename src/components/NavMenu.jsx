@@ -3,6 +3,12 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/icons/logocorporativo/logo.png";
 
 export const NavMenu = () => {
+  const handleClickScroll = () => {
+    window.scrollTo({
+      top: 600,
+      behavior: "smooth",
+    });
+  };
   return (
     <nav className="p-6">
       <ul className="flex items-center justify-between gap-4">
@@ -14,6 +20,7 @@ export const NavMenu = () => {
           <li>
             <NavLink
               to="/"
+              onClick={handleClickScroll}
               className={({ isActive }) =>
                 `${
                   isActive
@@ -28,6 +35,7 @@ export const NavMenu = () => {
           <li>
             <NavLink
               to="/servicios"
+              onClick={handleClickScroll}
               className={({ isActive }) =>
                 `${
                   isActive
@@ -42,6 +50,7 @@ export const NavMenu = () => {
           <li>
             <NavLink
               to="/noticias"
+              onClick={handleClickScroll}
               className={({ isActive }) =>
                 `${
                   isActive
@@ -56,6 +65,7 @@ export const NavMenu = () => {
           <li>
             <NavLink
               to="/contacto"
+              onClick={handleClickScroll}
               className={({ isActive }) =>
                 `${
                   isActive
