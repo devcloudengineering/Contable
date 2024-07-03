@@ -3,7 +3,7 @@ export function Servicios() {
   return (
     <>
       <h1 className="text-4xl text-start italic mx-16 mt-12 mb-12">
-        Servicios
+        Servicios Corporativos
       </h1>
       <ServiciosCentralizado />
     </>

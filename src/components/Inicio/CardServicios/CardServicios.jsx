@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import impuestos from "../../../assets/icons/servicioshome/impuestos_sii.png";
 import legales from "../../../assets/icons/servicioshome/legales.png";
 import contabilidad from "../../../assets/icons/servicioshome/contabilidad.png";
@@ -6,6 +7,11 @@ import recursos from "../../../assets/icons/servicioshome/recursos_humanos.png";
 import constitucion from "../../../assets/icons/servicioshome/constitucion_empresa.png";
 
 const CardServicios = () => {
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   const servicios = [
     {
       titulo: "Contabilidad",
@@ -48,9 +54,13 @@ const CardServicios = () => {
   return (
     <div className="flex flex-row flex-wrap items-center gap-4 justify-center md:flex-column p-6">
       {servicios.map((elementos) => (
-        <div
+        <motion.div
           key={elementos.titulo}
           className="flex flex-col items-start w-[20rem] gap-2 mb-4 cursor-pointer border-2 border-white shadow-lg scale-100 hover:scale-105 hover:shadow-md transition-all"
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4 }}
+          variants={itemVariants}
         >
           <div className="flex items-center gap-2">
             <img className="h-8" src={elementos.src} alt={elementos.titulo} />
@@ -59,7 +69,7 @@ const CardServicios = () => {
             </h2>
           </div>
           <p className="italic text-sm text-start ">{elementos.descripcion}</p>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
