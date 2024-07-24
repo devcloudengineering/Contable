@@ -1,5 +1,9 @@
 export * from './Boton/Boton';
 export * from './Boton/index';
+export * from './ContactoCentralizado/AsideDespliegue';
+export * from './ContactoCentralizado/ContactoCentralizado';
+export * from './ContactoCentralizado/FormularioDespliegue';
+export * from './ContactoCentralizado/index';
 export * from './FooterMenu';
 export * from './index';
 export * from './Inicio/CardPublicaciones/CardPublicaciones';
@@ -12,6 +16,7 @@ export * from './ModalHome';
 export * from './NavMenu';
 export * from './NoticiasCentralizado/index';
 export * from './NoticiasCentralizado/NoticiasCentralizado';
+export * from './NoticiasCentralizado/NoticiasDespliegue';
 export * from './ServiciosCentralizado/DespliegueServicios';
 export * from './ServiciosCentralizado/index';
 export * from './ServiciosCentralizado/ListaServicios';
