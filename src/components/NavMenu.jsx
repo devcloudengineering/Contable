@@ -11,12 +11,12 @@ export const NavMenu = () => {
   };
   return (
     <nav className="p-6">
-      <ul className="flex items-center justify-between gap-4">
+      <ul className="flex items-center justify-between gap-10">
         <li className="flex items-center text-2xl italic font-medium text-lime-100">
           <img className="h-10" src={logo} alt="Asesoria contable" />
           <p>Asesoria Pymes</p>
         </li>
-        <div className="flex flex-grow justify-center">
+        <div className="flex flex-grow justify-center gap-8">
           <li>
             <NavLink
               to="/"
@@ -60,6 +60,21 @@ export const NavMenu = () => {
               }
             >
               Noticias
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/cursos"
+              onClick={handleClickScroll}
+              className={({ isActive }) =>
+                `${
+                  isActive
+                    ? "text-lime-700 px-3 py-2 font-bold line-clamp-5 uppercase text-2xl underline decoration-5 underline-offset-8 transition-all"
+                    : "text-black px-3 py-2 font-bold hover:text-2xl hover:text-lime-500 transition-all cursor-pointer h-8 uppercase italic"
+                }`
+              }
+            >
+              Cursos
             </NavLink>
           </li>
           <li>
